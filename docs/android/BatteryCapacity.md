@@ -1,0 +1,2 @@
+`printf "Battery health: %.1f%% ($(cat /sys/class/power_supply/battery/batt_fcc)/4000 mAh)\nBattery cycles: %.1f\n" "$((1000 * $(cat /sys/class/power_supply/battery/batt_fcc) / 4000))e-1" "$((10 / 2 * $(cat /sys/class/power_supply/battery/batt_cc)))e-1"
+`
