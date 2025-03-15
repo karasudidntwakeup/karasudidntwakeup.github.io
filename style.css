@@ -14,9 +14,9 @@
   --catppuccin-flamingo: #fca5a5;
   --catppuccin-overlay0: #6c7086;
   --catppuccin-surface0: #313244;
-  --catppuccin-base: #1e1e2e;
-  --catppuccin-mantle: #181825;
-  --catppuccin-crust: #11111b;
+  --catppuccin-base: #1e1e2e; /* Dark background */
+  --catppuccin-mantle: #181825; /* Slightly darker background */
+  --catppuccin-crust: #11111b; /* Darkest background */
 }
 
 /* General Styles */
@@ -29,15 +29,15 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: var(--catppuccin-base);
-  color: var(--catppuccin-overlay0);
+  background-color: var(--catppuccin-base); /* Dark mode background */
+  color: var(--catppuccin-overlay0); /* Light text for contrast */
   padding: 20px;
 }
 
 header {
   text-align: center;
-  background-color: var(--catppuccin-mauve);
-  color: var(--catppuccin-crust);
+  background-color: var(--catppuccin-mauve); /* Highlight header */
+  color: var(--catppuccin-crust); /* Dark text on light background */
   padding: 20px 0;
   border-radius: 8px;
 }
@@ -59,18 +59,18 @@ header a {
 }
 
 section {
-  background-color: var(--catppuccin-mantle);
+  background-color: var(--catppuccin-mantle); /* Slightly darker sections */
   margin: 20px 0;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 h2 {
-  color: var(--catppuccin-blue);
+  color: var(--catppuccin-blue); /* Highlight section titles */
   font-size: 1.5rem;
   margin-bottom: 10px;
-  border-bottom: 2px solid var(--catppuccin-blue);
+  border-bottom: 2px solid var(--catppuccin-blue); /* Underline for emphasis */
   padding-bottom: 5px;
 }
 
@@ -89,7 +89,7 @@ article {
 }
 
 article h3 {
-  color: var(--catppuccin-teal);
+  color: var(--catppuccin-teal); /* Highlight project titles */
   font-size: 1.2rem;
   margin-bottom: 5px;
 }
@@ -102,7 +102,7 @@ article p {
 footer {
   text-align: center;
   padding: 15px 0;
-  background-color: var(--catppuccin-mauve);
+  background-color: var(--catppuccin-mauve); /* Match header style */
   color: var(--catppuccin-crust);
   margin-top: 20px;
   border-radius: 8px;
